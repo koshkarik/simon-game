@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simon Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="simon.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="simon">
+			<div class="square green-square" data-num="0"></div>
+			<div class="square red-square" data-num="1"></div>
+			<div class="square yellow-square" data-num="2"></div>
+			<div class="square blue-square" data-num="3"></div>
+			<div class="simon-setup">
+				<div class="setup-wrapper">
+					<div class="onOff-wrapper">
+						<input type="checkbox" name="turnOn" class="onOff">
+						<label for="turnOn"></label>
+					</div>
+					
+					<h1>Simon Game</h1>
+					<div class="show-game">
+						<p class="game-text"></p>
+					</div>
+					<div class="startStrict-wrapper">
+						<div class="start">
+							<button class="start-btn"></button>
+						</div>
+						<div class="strict-wrapper">
+							<div class="strict">
+								<div class="strict-checker"></div>
+								<input type="checkbox" name="strict" class="strict-check">
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<audio class="sound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" data-num="0"></audio>
+	<audio class="sound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" data-num="1"></audio>
+	<audio class="sound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" data-num="2"></audio>
+	<audio class="sound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" data-num="3"></audio>
+	<script type="text/javascript" src="simon.js"></script>
+</body>
+</html>
